@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile Form</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <form action="main.php" method="post">
+    
+    <!-- Name Field -->
+    <div>
+      <label class="label">Name</label>
+      <input class="text-input input" type="text" name="name" placeholder="John Doe" size="50" required />
+    </div> <!-- End of Name Field -->
+
+    <!-- Track Field -->
+     <div>
+      <label class="label">Track</label>
+      <select class="select-input input" name="track" required>
+        <option value="Backend">Backend</option>
+        <option value="Frontend">Frontend</option>
+        <option value="UI/UX">UI/UX</option>
+        <option value="Software Development">Software Development</option>
+        <option value="Mobile App Development">Mobile App Development</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="Netpreneurship">Netpreneurship</option>
+      </select>
+    </div> <!-- End of Track Field -->
+
+    <!-- Email Field -->
+    <div>
+      <label class="label">Email</label>
+      <input class="text-input input" type="email" name="email" placeholder="you@yourdomain.com" size="50" required />
+    </div> <!-- End of Email Field -->
+
+    <!-- Slack Id Field -->
+    <div>
+      <label class="label">Slack Id</label>
+      <input class="text-input input" type="text" name="slack-id" placeholder="@john" size="50" required />
+    </div> <!-- End of Slack Id Field -->
+
+    <!-- Position Field -->
+    <div>
+      <label class="label">Position</label>
+      <input type="radio" name="position" value="Intern" required /><span class="radio-text">Intern</span>
+      <input type="radio" name="position" value="Mentor" required /><span class="radio-text">Mentor</span>
+    </div> <!-- End of Position Field -->
+
+    <!-- Submit Button -->
+    <p align="right">
+      <button class="button" type="submit">Submit</button>
+    </p> <!-- End of Submit Button -->
+  </form>
+</body>
+</html>
